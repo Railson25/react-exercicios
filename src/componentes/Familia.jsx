@@ -1,26 +1,16 @@
 import React from 'react'
-
+import { filhosComProps } from '../utils/utils'
 export default props => 
 
     <div>
         <h1>Família</h1>
-        {React.cloneElement(props.children, { ...props })} 
-        {/* Passar clone criando um obejeto  para passar 
-            todas as props que você recebeu*/}      
+            {filhosComProps(props)}
+        {/*Precisa usar chaves para chamar a função
+            em JavaScript*/}
+
+
+        {/*React.Children.map(props.children, child => {
+            return React.cloneElement(child, { ...props})
+        utilizando a função map para percorer os elementos
+        gerando clone para conseguir passar as props */ }               
     </div>
-
-    //<div>
-    //    <h1>Família</h1>
-    //    {React.cloneElement(props.children, props)} 
-    //    {/* Passar todas as props sem especificar */}      
-    //</div>
-
-
-   // <div>
-   //     <h1>Família</h1>
-   //     {React.cloneElement(props.children,
-   //         { sobrenome : props.sobrenome })}
-   //     {/*O sobrenome que recebe via Propriedade 
-   //     Passa como parametro para o componente
-   //        que está sendo clonado*/}    
-   // </div>
