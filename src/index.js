@@ -5,16 +5,18 @@ import React from 'react'
 //import { CompA, CompB } from './componentes/DoisComponentes'
 //import MultiElementos from './componentes/MultiElementos'
 //import FamiliaSilva from './componentes/FamiliaSilva'
-import Familia from './componentes/Familia'
-import Membro from './componentes/Membro'
+//import Familia from './componentes/Familia'
+//import Membro from './componentes/Membro'
+import ComponenteComFunçao from './componentes/ComponenteComFunçao'
 
 const elemento = document.getElementById('root')
 ReactDOM.render(
 <div>
-    <Familia sobrenome='Pereira'>
+    <ComponenteComFunçao />
+    {/*<Familia sobrenome='Pereira'>
         <Membro nome='Andre' />
     </Familia>
-    {/*<FamiliaSilva sobrenome='Silva'/>
+    <FamiliaSilva sobrenome='Silva'/>
      <MultiElementos  />
      <CompA valor='Olá eu sou A' />
     <CompB valor='Olá eu sou B' />
