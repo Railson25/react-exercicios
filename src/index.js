@@ -7,13 +7,15 @@ import React from 'react'
 //import FamiliaSilva from './componentes/FamiliaSilva'
 //import Familia from './componentes/Familia'
 //import Membro from './componentes/Membro'
-import ComponenteComFunçao from './componentes/ComponenteComFunçao'
+//import ComponenteComFunçao from './componentes/ComponenteComFunçao'
+import Pai from './componentes/Pai'
 
 const elemento = document.getElementById('root')
 ReactDOM.render(
 <div>
-    <ComponenteComFunçao />
-    {/*<Familia sobrenome='Pereira'>
+    <Pai />
+    {/*<ComponenteComFunçao />
+    <Familia sobrenome='Pereira'>
         <Membro nome='Andre' />
     </Familia>
     <FamiliaSilva sobrenome='Silva'/>
