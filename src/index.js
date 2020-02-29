@@ -7,8 +7,9 @@ import Contador from './componentes/Contador'
 const elemento = document.getElementById('root')
 ReactDOM.render(
 <div>
-    <Contador numero={0} />    
-    {/*<ComponenteClasse valor='Sou um componente de Classe!' />
-        */}
+
+    <Contador numeroInicial={100} />
+    {/*iniciar contador a qualquer numero a sua escolha
+    <Contador numero={0} /> */}
 </div>
 , elemento)
